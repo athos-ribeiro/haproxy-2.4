@@ -70,7 +70,7 @@ matrix = []
 
 # Ubuntu
 
-os = "ubuntu-20.04"
+os = "ubuntu-22.04"
 TARGET = "linux-glibc"
 for CC in ["gcc", "clang"]:
     matrix.append(
