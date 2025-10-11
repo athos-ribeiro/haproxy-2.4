@@ -4,6 +4,8 @@ name: Spec Compliance
 on:
   schedule:
     - cron: "0 0 * * 3"
+  workflow_dispatch:
+  push:
 
 jobs:
   h2spec:
