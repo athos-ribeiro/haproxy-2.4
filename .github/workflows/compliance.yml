@@ -34,6 +34,7 @@ jobs:
           TARGET=${{ matrix.TARGET }} \
           CC=${{ matrix.CC }} \
           DEBUG="-DDEBUG_STRICT -DDEBUG_MEMORY_POOLS -DDEBUG_POOL_INTEGRITY" \
+          DEBUG_CFLAGS="-g -Wno-deprecated-declarations" \
           USE_OPENSSL=1
         sudo make install
     - name: Show HAProxy version
